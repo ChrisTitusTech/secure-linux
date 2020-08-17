@@ -24,7 +24,6 @@ sysctl -a --pattern 'net.ipv4.conf.(eth|wlan)0.arp'
 cat <<EOF > /etc/host.conf
 order bind,hosts
 multi on
-nospoof on
 EOF
 
 # --- Enable fail2ban
